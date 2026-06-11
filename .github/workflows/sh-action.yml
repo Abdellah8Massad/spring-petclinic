@@ -1,0 +1,17 @@
+name: "Exemple de workflow sh comosit"
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  greet-user:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Dire bonjour
+      uses: ./.github/actions/my-custom-action-composite
+      with:
+        who-to-greet: "Jean"
