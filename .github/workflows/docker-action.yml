@@ -1,4 +1,4 @@
-name: "Exemple de workflow"
+name: "Exemple de workflow docker"
 on:
   push:
     branches:
