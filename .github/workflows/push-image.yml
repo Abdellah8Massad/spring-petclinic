@@ -68,7 +68,7 @@ jobs:
       - name: Mettre à jour la version de l'image
         working-directory: ./infra-repo/kustomize/dev
         run: |
-          kustomize edit set image spring-petclinic=ghcr.io/abdellah8massad/spring-petclinic:${{ github.sha }}
+          kustomize edit set image ghcr.io/abdellah8massad/spring-petclinic=ghcr.io/abdellah8massad/spring-petclinic:${{ github.sha }}
 
       - name: Commit et Push vers le dépôt d'infrastructure
         working-directory: ./infra-repo
