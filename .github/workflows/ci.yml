@@ -9,7 +9,7 @@ on:
 
 jobs:
   build-and-push:
-    uses: ./.github/workflows/push-image.yml
+    uses: ./push-image.yml
     with:
       username: Mona
 
